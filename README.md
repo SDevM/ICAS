@@ -27,7 +27,7 @@ If you'd like to contribute to this project, simply create a fork and make a pul
 
 ## Usage
 
--   Double click **expressgen.bat** to get started
+-   Double click **gen.bat** to get started
 
 ## NPM COMMANDS
 
