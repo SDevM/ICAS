@@ -23,12 +23,15 @@ If you'd like to contribute to this project, simply create a fork and make a pul
     -   Create new entry to `path` in System Environment Variables pointing to [C:Gradle/gradle_version_folder]()
 -   Microsoft Build Tools for Visual Studio 2015
 -   Cordova `npm i -g cordova`
+-   Cordova Builders `npm i -g @ionic/cordova-builders`
 -   Ionic `npm i -g ionic`
 
 ## Usage
 
 -   Double click **gen.bat** to get started
+-   Double click **ICAS.gen.Ink** (option 2)
 -   Run the platform script `npm run platform`, then you can run the apk script `npm run apk`
+-   ICAS.gen.Ink is a shortcut file that can be added to your start menu `right click file, select Pin to Start Menu`
 
 ## NPM COMMANDS
 
