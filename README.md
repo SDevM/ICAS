@@ -35,6 +35,10 @@ If you'd like to contribute to this project, simply create a fork and make a pul
 
 > Runs commands to pull up the lab view of your project `npm run lab`
 
+### Set Android Platform (Default Android@11.0.0)
+
+> Runs commands to build your apk `npm run platform`
+
 ### Build Android APK
 
 > Runs commands to build your apk `npm run apk`

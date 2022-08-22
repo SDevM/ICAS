@@ -68,6 +68,7 @@ def main():
                     '    "lint": "ionic-app-scripts lint",\n'
                     '    "lab": "ionic serve -o --lab",\n'
                     '    "apk": "ionic cordova build android"\n'
+                    '    "platform": "ionic cordova platform add android@11.0.0"'
                     '  },\n'
                     '  "dependencies": {\n'
                     '    "@angular/animations": "5.2.11",\n'
