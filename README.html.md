@@ -44,12 +44,16 @@ If you'd like to contribute to this project, simply create a fork and make a pul
     -   Create new entry to **path** in System Environment Variables pointing to <span class="path">C:\Gradle\gradle_version_folder</span> <i class="fa-solid fa-triangle-exclamation"></i>
 -   Microsoft Build Tools for Visual Studio 2015 <i class="fa-solid fa-triangle-exclamation"></i>
 -   Cordova `npm i -g cordova` <i class="fa-solid fa-triangle-exclamation"></i>
+-   Cordova Builders `npm i -g @ionic/cordova-builders` <i class="fa-solid fa-triangle-exclamation"></i>
 -   Ionic `npm i -g ionic` <i class="fa-solid fa-triangle-exclamation"></i>
 
 ## Usage
 
 > Double click <span class="noun">expressgen.bat</span> to get started
+> Double click **ICAS.gen.Ink** (option 2)
 > Run Set Android Platform script before Build Android APK script
+> ICAS.gen.Ink is a shortcut file that can be added to your start menu `right click file, select Pin to Start Menu`
+
 
 ## Npm Commands
 
