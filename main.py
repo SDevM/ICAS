@@ -35,8 +35,8 @@ def main():
     tkinter.Tk().withdraw()
     gen_directory = filedialog.askdirectory()
     os.chdir(gen_directory)
+    os.system("npm i -g @ionic/cordova-builders")
     os.system(f"ionic start {name} --type=ionic-angular --cordova")
-    os.system("npm i")
     project_dir: str = os.path.normpath(os.path.join(gen_directory, name))
     # folders: list[str] = [  ]
     files: list[str] = [ "authors", "angular.json", "package.json" ]
@@ -51,52 +51,6 @@ def main():
         if file == "authors":
             f = open(os.path.normpath(os.path.join(project_dir, file)), "w")
             f.write(authorList)
-            f.close()
-            continue
-        if file == "package.json":
-            f = open(os.path.normpath(os.path.join(project_dir, file)), "w")
-            f.write('{\n'
-                    f'  "name": "{name}",\n'
-                    '  "version": "0.0.1",\n'
-                    '  "author": "Ionic Framework",\n'
-                    '  "homepage": "http://ionicframework.com/",\n'
-                    '  "private": true,\n'
-                    '  "scripts": {\n'
-                    '    "start": "ionic-app-scripts serve",\n'
-                    '    "clean": "ionic-app-scripts clean",\n'
-                    '    "build": "ionic-app-scripts build",\n'
-                    '    "lint": "ionic-app-scripts lint",\n'
-                    '    "lab": "ionic serve -o --lab",\n'
-                    '    "apk": "ionic cordova build android",\n'
-                    '    "platform": "ionic cordova platform add android@11.0.0"\n'
-                    '  },\n'
-                    '  "dependencies": {\n'
-                    '    "@angular/animations": "5.2.11",\n'
-                    '    "@angular/common": "5.2.11",\n'
-                    '    "@angular/compiler": "5.2.11",\n'
-                    '    "@angular/compiler-cli": "5.2.11",\n'
-                    '    "@angular/core": "5.2.11",\n'
-                    '    "@angular/forms": "5.2.11",\n'
-                    '    "@angular/platform-browser": "5.2.11",\n'
-                    '    "@angular/platform-browser-dynamic": "5.2.11",\n'
-                    '    "@ionic-native/core": "4.20.0",\n'
-                    '    "@ionic-native/splash-screen": "4.20.0",\n'
-                    '    "@ionic-native/status-bar": "4.20.0",\n'
-                    '    "@ionic/cordova-builders": "^7.0.0",\n'
-                    '    "@ionic/storage": "2.2.0",\n'
-                    '    "ionic-angular": "3.9.9",\n'
-                    '    "ionicons": "3.0.0",\n'
-                    '    "rxjs": "5.5.11",\n'
-                    '    "sw-toolbox": "3.6.0",\n'
-                    '    "zone.js": "0.8.29"\n'
-                    '  },\n'
-                    '  "devDependencies": {\n'
-                    '    "@ionic/app-scripts": "3.2.4",\n'
-                    '    "@ionic/lab": "3.2.13",\n'
-                    '    "typescript": "2.6.2"\n'
-                    '  },\n'
-                    '  "description": "An Ionic project"\n'
-                    '}')
             f.close()
             continue
         if file == "angular.json":
