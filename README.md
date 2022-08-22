@@ -28,6 +28,7 @@ If you'd like to contribute to this project, simply create a fork and make a pul
 ## Usage
 
 -   Double click **gen.bat** to get started
+-   Run the platform script `npm run platform`, then you can run the apk script `npm run apk`
 
 ## NPM COMMANDS
 

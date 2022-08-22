@@ -36,7 +36,7 @@ If you'd like to contribute to this project, simply create a fork and make a pul
 -   JDK 11+ <i class="fa-solid fa-triangle-exclamation"></i>
     -   Set JAVA_HOME to the JDK folder <span class="path">C:\Program Files\Java\jdk_version_folder</span> <i class="fa-solid fa-triangle-exclamation"></i>
 -   Android Studio(Android SDK) <i class="fa-solid fa-triangle-exclamation"></i>
-    -   Set ANDROID_HOME to <span class="path">C:\Users\\***\AppData\Local\Android\Sdk</span> <i class="fa-solid fa-triangle-exclamation"></i>
+    -   Set ANDROID_HOME to <span class="path">C:\Users\\\*\*\*\AppData\Local\Android\Sdk</span> <i class="fa-solid fa-triangle-exclamation"></i>
     -   Get SDK Manager > SDK Platforms > Android API 32 <i class="fa-solid fa-triangle-exclamation"></i>
     -   Get SDK Manager > SDK Tools > Android SDK Tools (Obsolete): <span class="instruction">uncheck Hide Obsolete Packages</span> <i class="fa-solid fa-triangle-exclamation"></i>
     -   Get SDK Manager > SDK Tools > SDK Build-Tools 32: <span class=instruction>check Show Package Details</span> <i class="fa-solid fa-triangle-exclamation"></i>
@@ -48,10 +48,19 @@ If you'd like to contribute to this project, simply create a fork and make a pul
 
 ## Usage
 
->   Double click <span class="noun">expressgen.bat</span> to get started
+> Double click <span class="noun">expressgen.bat</span> to get started
+> Run Set Android Platform script before Build Android APK script
 
 ## Npm Commands
+
 ### Open Lab <i class="fa-solid fa-flask"></i>
->   Runs commands to pull up the lab view of your project `npm run lab`
+
+> Runs commands to pull up the lab view of your project `npm run lab`
+
+### Set Android Platform (Default Android@11.0.0) <i class="fa-brands fa-android"></i>
+
+> Runs commands to build your apk `npm run platform`
+
 ### Build Android APK <i class="fa-brands fa-android"></i>
->   Runs commands to build your apk `npm run apk`
+
+> Runs commands to build your apk `npm run apk`
