@@ -49,12 +49,12 @@ def main():
     # Create files
     for file in files:
         if file == "authors":
-            f = open(os.path.normpath(os.path.join(project_dir, file)), "x")
+            f = open(os.path.normpath(os.path.join(project_dir, file)), "w")
             f.write(authorList)
             f.close()
             continue
         if file == "package.json":
-            f = open(os.path.normpath(os.path.join(project_dir, file)), "x")
+            f = open(os.path.normpath(os.path.join(project_dir, file)), "w")
             f.write('{\n'
                     f'  "name": "{name}",\n'
                     '  "version": "0.0.1",\n'
@@ -100,7 +100,7 @@ def main():
             f.close()
             continue
         if file == "angular.json":
-            f = open(os.path.normpath(os.path.join(project_dir, file)), "x")
+            f = open(os.path.normpath(os.path.join(project_dir, file)), "w")
             f.write('{\n'
                     '  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",\n'
                     '  "version": 1,\n'
