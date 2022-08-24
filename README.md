@@ -22,9 +22,8 @@ If you'd like to contribute to this project, simply create a fork and make a pul
 -   Gradle
     -   Create new entry to `path` in System Environment Variables pointing to [C:Gradle/gradle_version_folder]()
 -   Microsoft Build Tools for Visual Studio 2015
--   Cordova `npm i -g cordova`
--   Cordova Builders `npm i -g @ionic/cordova-builders`
--   Ionic `npm i -g ionic`
+-   Cordova
+-   Ionic
 
 ## Usage
 

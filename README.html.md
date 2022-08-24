@@ -1,23 +1,22 @@
-<head>
-    <style>
-        .instruction {
-            color: #FBB454;
-        }
-        .path {
-            color: #F637EC;
-        }
-        .noun {
-            color: lightgreen;
-        }
-        .fa-star {
-            color: yellow;
-        }
-        .fa-triangle-exclamation {
-            color: red;
-        }
-    </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-</head>
+<style>
+    .instruction {
+        color: #FBB454;
+    }
+    .path {
+        color: #F637EC;
+    }
+    .noun {
+        color: lightgreen;
+    }
+    .fa-star {
+        color: yellow;
+    }
+    .fa-triangle-exclamation {
+        color: red;
+    }
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 
 # Ionic-Cordova App Starter (I.C.A.S) - Simon D. Maxwell
 
@@ -53,7 +52,6 @@ If you'd like to contribute to this project, simply create a fork and make a pul
 > Double click **ICAS.gen.Ink** (option 2)
 > Run Set Android Platform script before Build Android APK script
 > ICAS.gen.Ink is a shortcut file that can be added to your start menu `right click file, select Pin to Start Menu`
-
 
 ## Npm Commands
 
