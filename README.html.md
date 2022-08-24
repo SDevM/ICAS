@@ -24,7 +24,6 @@
 
 <i class="fa-solid fa-star"></i> Create an Angular Ionic application fitted with Cordova <br/>
 <i class="fa-solid fa-star"></i> Generate <span class="noun">angular.json</span> to comply with the needs of <span class="noun">@ionic/cordova-builders</span> <br/>
-<i class="fa-solid fa-star"></i> Attempts to install <span class="noun">@ionic/cordova-builders</span> <br/>
 
 If you'd like to contribute to this project, simply create a fork and make a pull request following this projects pull request format.
 
