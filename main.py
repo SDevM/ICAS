@@ -30,7 +30,8 @@ def main():
 
     authorList = authors(authorsCount)
     print(authorList)
-    name = input("What will this project be named?")
+    name = input("What will this project be named? ")
+    desc = input("Describe this project:\n")
     print("[!] Where should this project be stored? [Hit enter to select location]")
     tkinter.Tk().withdraw()
     gen_directory = filedialog.askdirectory()
@@ -115,7 +116,7 @@ def main():
                     '    "ts-node": "~8.3.0",\n'
                     '    "typescript": "~4.7.3"\n'
                     '  },\n'
-                    '  "description": "An Ionic project"\n'
+                    f'  "description": "{desc}"\n'
                     '}')
             f.close()
             continue
