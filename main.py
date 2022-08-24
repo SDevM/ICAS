@@ -11,6 +11,8 @@ def main():
     app_version = "v1.2.0"
 
     authorsCount = int(input('How many authors does this project have?\n'))
+    while type(name) != int:
+        authorsCount = int(input('How many authors does this project have?\n'))
     print('If at any time you realize you have requested too many authors, enter "*end"\n'
           'If at any time you realize you have requested too little authors, enter "*more"\n')
     def authors(count):
@@ -32,7 +34,10 @@ def main():
     print(authorList)
     name = input("What will this project be named? ")
     desc = input("Describe this project:\n")
-    print("[!] Where should this project be stored? [Hit enter to select location]")
+    design = input("Will you use 1.Bootstrap, 2.Tailwind, 3.Both, 4.Neither: ")
+    while design != 1 && design != 2 && design != 3 && design !=4:
+        design = input("Will you use 1.Bootstrap, 2.Tailwind, 3.Both, 4.Neither: ")
+    print("\n[!] Where should this project be stored? [Hit enter to select location]")
     tkinter.Tk().withdraw()
     gen_directory = filedialog.askdirectory()
     os.chdir(gen_directory)
@@ -124,6 +129,13 @@ def main():
 
     # Generation completed
     os.chdir(project_dir)
+    if design == 1:
+        os.system("ng add @ng-bootstrap/ng-bootstrap")
+    if design == 2:
+        os.system("ng add @ngneat/tailwind")
+    if design == 3:
+        os.system("ng add @ng-bootstrap/ng-bootstrap")
+        os.system("ng add @ngneat/tailwind")    
     os.system("ng add @ionic/cordova-builders")
     completed(os.path.normpath(project_dir))
 
