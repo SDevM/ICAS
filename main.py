@@ -10,9 +10,10 @@ def main():
     app_name = "Ionic-Cordova App Starter (ICAS) - Simon Maxwell"
     app_version = "v1.2.0"
 
-    authorsCount = int(input('How many authors does this project have?\n'))
-    while type(name) != int:
-        authorsCount = int(input('How many authors does this project have?\n'))
+    authorsCount = str(input('How many authors does this project have?\n'))
+    while not authorsCount.isnumeric():
+        authorsCount = input('How many authors does this project have?\n')
+    authorsCount = int(authorsCount)
     print('If at any time you realize you have requested too many authors, enter "*end"\n'
           'If at any time you realize you have requested too little authors, enter "*more"\n')
     def authors(count):
@@ -34,9 +35,10 @@ def main():
     print(authorList)
     name = input("What will this project be named? ")
     desc = input("Describe this project:\n")
-    design = input("Will you use 1.Bootstrap, 2.Tailwind, 3.Both, 4.Neither: ")
-    while design != 1 && design != 2 && design != 3 && design !=4:
+    design = str(input("Will you use 1.Bootstrap, 2.Tailwind, 3.Both, 4.Neither: "))
+    while (design != "1") & (design != "2") & (design != "3") & (design != "4") & (not design.isnumeric()):
         design = input("Will you use 1.Bootstrap, 2.Tailwind, 3.Both, 4.Neither: ")
+    design = int(design)
     print("\n[!] Where should this project be stored? [Hit enter to select location]")
     tkinter.Tk().withdraw()
     gen_directory = filedialog.askdirectory()
