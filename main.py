@@ -65,7 +65,7 @@ def main():
                     '    "build": "ng build",\n'
                     '    "test": "ng test",\n'
                     '    "lint": "ng lint",\n'
-                    '    "e2e": "ng e2e,"\n'
+                    '    "e2e": "ng e2e",\n'
                     '    "lab": "ionic serve -o --lab",\n'
                     '	 "platform": "ionic cordova platform add android@11.0.0",\n'
                     '	 "apk": "ionic cordova build android"'
