@@ -2,15 +2,21 @@
 
 ## Features
 
+-   [x] Generate app name, authors and description
 -   [x] Create an Angular Ionic application fitted with Cordova
--   [x] Generate **angular.json** to comply with the needs of **@ionic/cordova-builders**
+-   [x] Prepare **@ionic/cordova-builders**
+-   [x] Optional Bootstrap and Tailwind options
 
 If you'd like to contribute to this project, simply create a fork and make a pull request following this projects pull request format.
 
 ## Pre-requisites
 
--   Python **3.10.x** or later
 -   Windows Operating System
+-   Python **3.10.x** or later
+-   Ionic
+
+## Requisites
+
 -   JDK 11+
     -   Set JAVA_HOME to the JDK folder [C:\Program Files\Java\jdk_version_folder]()
 -   Android Studio(Android SDK)
@@ -22,7 +28,6 @@ If you'd like to contribute to this project, simply create a fork and make a pul
     -   Create new entry to `path` in System Environment Variables pointing to [C:Gradle/gradle_version_folder]()
 -   Microsoft Build Tools for Visual Studio 2015
 -   Cordova
--   Ionic
 
 ## Usage
 
