@@ -35,7 +35,7 @@ def main():
     tkinter.Tk().withdraw()
     gen_directory = filedialog.askdirectory()
     os.chdir(gen_directory)
-    os.system(f"ionic start {name} --type=ionic-angular --cordova")
+    os.system(f"ionic start {name} --type=angular --cordova --appname='{name}' ")
     project_dir: str = os.path.normpath(os.path.join(gen_directory, name))
     # folders: list[str] = [  ]
     files: list[str] = [ "authors", "package.json" ]
@@ -117,6 +117,7 @@ def main():
             continue
 
     # Generation completed
+    os.chdir(project_dir)
     os.system("ng add @ionic/cordova-builders")
     completed(os.path.normpath(project_dir))
 
