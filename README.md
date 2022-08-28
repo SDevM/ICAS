@@ -1,5 +1,5 @@
 # Ionic-Cordova App Starter (I.C.A.S) - Simon D. Maxwell
-
+#### Please leave a ⭐ star if you use my script! :)
 ## Features
 
 -   [x] Generate app name, authors and description
