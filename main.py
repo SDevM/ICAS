@@ -8,7 +8,7 @@ from tkinter import filedialog
 # Main function
 def main():
     app_name = "Ionic-Cordova App Starter (ICAS) - Simon Maxwell"
-    app_version = "v1.2.1"
+    app_version = "v1.2.2"
 
     authorsCount = str(input('How many authors does this project have?\n'))
     while not authorsCount.isnumeric():
@@ -83,11 +83,12 @@ def main():
                     '    "lint": "ng lint",\n'
                     '    "e2e": "ng e2e",\n'
                     '    "lab": "ionic serve -o --lab",\n'
-                    '	 "platform": "ionic cordova platform add android@11.0.0",\n'
-                    '	 "apk": "ionic cordova build android",\n'
-                    '    "deploy": "npm run platform && npm run apk",\n'
+                    '	 "build:platform": "ionic cordova platform add android@11.0.0",\n'
+                    '	 "build:apk": "ionic cordova build android",\n'
+                    '    "build:deploy": "npm run platform && npm run apk",\n'
                     '    "studio": "start studio.bat",\n'
-                    '    "prepare": "ionic cordova prepare android && npm run studio"'
+                    '    "studio:prepare": "ionic cordova prepare android",\n'
+                    '    "studio:launch": "npm run studio:prepare && npm run studio"'
                     '  },\n'
                     '  "private": true,\n'
                     '  "dependencies": {\n'

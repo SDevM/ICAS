@@ -44,16 +44,20 @@ If you'd like to contribute to this project, simply create a fork and make a pul
 
 ### Set Android Platform (Default Android@11.0.0)
 
-> Runs commands to set your android platform `npm run platform`
+> Runs commands to set your android platform `npm run build:platform`
 
 ### Build Android APK
 
-> Runs commands to build your apk `npm run apk`
+> Runs commands to build your apk `npm run build:apk`
+
+### Combo: `npm run build:deploy`
 
 ### Open Android Project In Android Studio
 
 > Runs command to open android studio `npm run studio`
 
-### Prepare Android Resource THEN Open Android Studio
+### Prepare Android Resources For Android Studio
 
-> Runs android preparation before opening android studio `npm run prepare`
+> Runs command to open android studio `npm run studio:prepare`
+
+### Combo: `npm run studio:launch`
