@@ -8,7 +8,7 @@ from tkinter import filedialog
 # Main function
 def main():
     app_name = "Ionic-Cordova App Starter (ICAS) - Simon Maxwell"
-    app_version = "v1.2.0"
+    app_version = "v1.2.1"
 
     authorsCount = str(input('How many authors does this project have?\n'))
     while not authorsCount.isnumeric():
@@ -46,7 +46,7 @@ def main():
     os.system(f"ionic start {name} --type=angular --cordova --appname='{name}' ")
     project_dir: str = os.path.normpath(os.path.join(gen_directory, name))
     # folders: list[str] = [  ]
-    files: list[str] = [ "authors", "package.json" ]
+    files: list[str] = [ "authors", "package.json", "studio.bat" ]
 
     # Create folders
     # for folder in folders:
@@ -58,6 +58,14 @@ def main():
         if file == "authors":
             f = open(os.path.normpath(os.path.join(project_dir, file)), "w")
             f.write(authorList)
+            f.close()
+            continue
+        if file == "studio.bat":
+            f = open(os.path.normpath(os.path.join(project_dir, file)), "w")
+            f.write('set ionicmapvar=%cd%\n'
+                    'cd "C:\Program Files\Android\Android Studio\bin\"\n'
+                    'start studio64.exe %ionicmapvar%/platforms/android\n'
+                    'exit')
             f.close()
             continue
         if file == "package.json":
@@ -77,7 +85,9 @@ def main():
                     '    "lab": "ionic serve -o --lab",\n'
                     '	 "platform": "ionic cordova platform add android@11.0.0",\n'
                     '	 "apk": "ionic cordova build android",\n'
-                    '    "deploy": "npm run platform && npm run apk"'
+                    '    "deploy": "npm run platform && npm run apk",\n'
+                    '    "studio": "start studio.bat",\n'
+                    '    "prepare": "ionic cordova prepare android && npm run studio"'
                     '  },\n'
                     '  "private": true,\n'
                     '  "dependencies": {\n'
