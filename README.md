@@ -58,6 +58,6 @@ If you'd like to contribute to this project, simply create a fork and make a pul
 
 ### Prepare Android Resources For Android Studio
 
-> Runs command to open android studio `npm run studio:prepare`
+> Runs command to prepare android resources`npm run studio:prepare`
 
 ### Combo: `npm run studio:launch`
