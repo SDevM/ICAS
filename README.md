@@ -33,7 +33,8 @@ If you'd like to contribute to this project, simply create a fork and make a pul
 
 -   Double click **gen.bat** to get started
 -   Double click **ICAS.gen.Ink** (option 2)
--   Run the platform script `npm run build:platform`, then you can run the apk script `npm run build:apk` or `npm build:deploy`
+-   Run the platform script `npm run build:platform`, then you can run the apk script `npm run build:apk`
+-   Or both with `npm build:deploy`
 -   Run the android studio preparation script `npm run studio:prepare`, then you can run the android project script `npm run studio`
 -   Or both with `npm run studio:launch`
 -   ICAS.gen.Ink is a shortcut file that can be added to your start menu `right click file, select Pin to Start Menu`
