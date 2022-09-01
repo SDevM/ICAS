@@ -63,7 +63,7 @@ def main():
         if file == "studio.bat":
             f = open(os.path.normpath(os.path.join(project_dir, file)), "w")
             f.write('set ionicmapvar=%cd%\n'
-                    'cd "C:\Program Files\Android\Android Studio\bin\"\n'
+                    'cd "C:\Program Files\Android\Android Studio\\bin\"\n'
                     'start studio64.exe %ionicmapvar%/platforms/android\n'
                     'exit')
             f.close()
