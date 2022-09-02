@@ -87,7 +87,7 @@ def main():
                     '	 "build:apk": "ionic cordova build android --prod",\n'
                     '    "build:deploy": "npm run build:platform && npm run apk",\n'
                     '    "studio": "start studio.bat",\n'
-                    '    "studio:prepare": "ionic cordova prepare android",\n'
+                    '    "studio:prepare": "ionic cordova prepare android --prod",\n'
                     '    "studio:launch": "npm run studio:prepare && npm run studio"'
                     '  },\n'
                     '  "private": true,\n'
