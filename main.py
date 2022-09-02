@@ -8,7 +8,7 @@ from tkinter import filedialog
 # Main function
 def main():
     app_name = "Ionic-Cordova App Starter (ICAS) - Simon Maxwell"
-    app_version = "v1.2.2"
+    app_version = "v1.2.3"
 
     authorsCount = str(input('How many authors does this project have?\n'))
     while not authorsCount.isnumeric():
