@@ -72,7 +72,7 @@ def main():
             f = open(os.path.normpath(os.path.join(project_dir, file)), "w")
             f.write('{\n'
                     f'  "name": "{name}",\n'
-                    '  "version": "0.0.1",\n'
+                    '  "version": "1.2.3",\n'
                     '  "author": "Ionic Framework",\n'
                     '  "homepage": "https://ionicframework.com/",\n'
                     '  "scripts": {\n'
@@ -84,7 +84,7 @@ def main():
                     '    "e2e": "ng e2e",\n'
                     '    "lab": "ionic serve -o --lab",\n'
                     '	 "build:platform": "ionic cordova platform add android@11.0.0",\n'
-                    '	 "build:apk": "ionic cordova build android",\n'
+                    '	 "build:apk": "ionic cordova build android --prod",\n'
                     '    "build:deploy": "npm run build:platform && npm run apk",\n'
                     '    "studio": "start studio.bat",\n'
                     '    "studio:prepare": "ionic cordova prepare android",\n'
