@@ -85,7 +85,7 @@ def main():
                     '    "lab": "ionic serve -o --lab",\n'
                     '	 "build:platform": "ionic cordova platform add android@11.0.0",\n'
                     '	 "build:apk": "ionic cordova build android",\n'
-                    '    "build:deploy": "npm run platform && npm run apk",\n'
+                    '    "build:deploy": "npm run build:platform && npm run apk",\n'
                     '    "studio": "start studio.bat",\n'
                     '    "studio:prepare": "ionic cordova prepare android",\n'
                     '    "studio:launch": "npm run studio:prepare && npm run studio"'
